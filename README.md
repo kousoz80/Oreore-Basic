@@ -120,8 +120,11 @@ close
 座標(x, y)に点を打つ
 
 cは色コードで&hrrggbb
+
 rr：赤成分(00~ff)
+
 gg：緑〃
+
 bb：青〃
 
 ・ line(x1, y1)-(x2, y2), c
@@ -181,7 +184,20 @@ x(ミリ秒)プログラムを一時停止させる
 
 ・ len(a＄)
 
+・ sin(x)
+
+・ cos(x)
+
+・ tan(x)
+
+・ atn(x)
+
+・ exp(x)
+
+・ log(x)
+
 ・ input＄(x)・・・コンソール入力
+
  ・ input＄(x,y)・・・ファイル入力
 
 ファイルやコンソールから指定文字数の文字列を受けとる
@@ -228,6 +244,7 @@ dim aa(10,20)
 ソースコードファイル"oreore_basic001.prj"をコンパイルするためには"ObjectEditor"という開発環境およびoregengo_Rコンパイラが必要となります。
 詳細については以下もリンクを参照して下さい。
 https://github.com/kousoz80/ObjectEditor
+  
 https://github.com/kousoz80/oregengo_R
 
 コンパイル手順は
@@ -237,4 +254,5 @@ ObjectEditorを起動してソースコードファイルを開いてコンパ�
 ![enter image description here](https://imgur.com/ROyaXIc.jpg)
 
 コンパイルが終了したら、出来上がったUEFIアプリケーションファイルをOreore-OSの起動USBメモリにコピーしてパソコンを起動すればBasicが使用可能になります。
+
 
