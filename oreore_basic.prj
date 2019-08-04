@@ -856,7 +856,7 @@ cmd_input:
   // ファイルから入力
   if TokenText$&lt;&gt;&apos;#&apos; goto cmd_input3
     getToken
-    TokenValue#, nn#=
+    TokenValue#, (long) nn#=
     if nn#&lt;0 then   &quot;Out of Range&quot;, assertError
     if nn#&gt;=MAX_FILES then  &quot;Out of Range&quot;, assertError
     nn#, FILE_SIZE, * Xfp, + fp_adr#=
