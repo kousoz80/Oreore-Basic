@@ -1709,7 +1709,7 @@ func_mids:
   &quot;,&quot;, checkToken
   eval_expression
   if TokenText$=&apos;,&apos;   then  getToken eval_expression gotofunc_midsx
-  MAX_STR_LENGTH, put_number
+  MAX_STR_LENGTH, (double) put_number
 func_midsx:
   &quot;)&quot;, checkToken
   get_number (long) jj#=
@@ -1861,7 +1861,7 @@ func_inputs:
 
 
   // ファイルから指定文字数入力
-  if TokenText$&lt;&gt;&apos;,&apos; goto func_inputs
+  if TokenText$&lt;&gt;&apos;,&apos; goto func_inputs1
     getToken
     if TokenText$=&apos;#&apos; then getToken
     eval_expression
