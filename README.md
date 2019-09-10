@@ -41,29 +41,31 @@ Basic処理系です。
 ・run
 
 ・edit
+  
 エディタを起動してプログラムを編集します
 使用方法はOS付属のエディタと同じです。
 
 ・make
-　　
+  
 ・make "ファイル名"
-　　
+  
 BASICプログラムをoregengo-Rプログラムに変換して
 ファイルに出力します。
 ファイル名が省略されると"bas_out.r"という名前のファイルが作られます。
 また生成されたプログラムをコンパイルするためには
 OSのコマンドモードで以下のコマンドを打ち込んで下さい。
-　　
+  
  $ orc stdio.rh basic.rh ソースファイル名.r
- 　　
+  　
  $ asm asm.s 実行ファイル名.efi
+  
  
  (例)
- 　　
+   
  $ orc stdio.rh basic.rh bas_out.r
- 　　
+   
  $ asm asm.s test.efi
- 
+   
  
 ・bye
 
