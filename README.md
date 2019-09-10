@@ -41,12 +41,27 @@ Basic処理系です。
 ・run
 
 ・edit
+エディタを起動してプログラムを編集します
+使用方法はOS付属のエディタと同じです。
 
-編集が終わって、編集画面から実行画面に戻るには”Stop”ボタンを押します。
-
+・make
+・make "ファイル名"
+BASICプログラムをoregengo-Rプログラムに変換して
+ファイルに出力します。
+ファイル名が省略されると"bas_out.r"という名前のファイルが作られます。
+また生成されたプログラムをコンパイルするためには
+OSのコマンドモードで以下のコマンドを打ち込んで下さい。
+ $ orc stdio.rh basic.rh ソースファイル名.r
+ $ asm asm.s 実行ファイル名.efi
+ 
+ (例)
+ $ orc stdio.rh basic.rh bas_out.r
+ $ asm asm.s test.efi
+ 
+ 
 ・bye
 
-BASICを終了してOSに復帰する
+BASICを終了してOSに復帰します
 
 ・ print
 
@@ -152,7 +167,6 @@ box(x1,y1)-(x2,y2), cで描かれる長方形に内接する塗りつぶした�
 
 座標(x, y)に画像※を表示する
 
-JPEG,PNGなどの様々な画像フォーマットに対応しています。
 
 ・ exec "コマンド"
 
@@ -242,7 +256,7 @@ dim aa(10,20)
 
 ■コンパイル・実行
 ソースコードファイル"oreore_basic001.prj"をコンパイルするためには"ObjectEditor"という開発環境およびoregengo_Rコンパイラが必要となります。
-詳細については以下もリンクを参照して下さい。
+詳細については以下のリンクを参照して下さい。
 https://github.com/kousoz80/ObjectEditor
   
 https://github.com/kousoz80/oregengo_R
