@@ -56,14 +56,14 @@ BASICプログラムをoregengo-Rプログラムに変換して
 OSのコマンドモードで以下のコマンドを打ち込んで下さい。
   
  $ orc stdio.rh basic.rh ソースファイル名.r
-  　
+   
  $ asm asm.s 実行ファイル名.efi
   
  
  (例)
    
  $ orc stdio.rh basic.rh bas_out.r
-   
+  
  $ asm asm.s test.efi
    
  
