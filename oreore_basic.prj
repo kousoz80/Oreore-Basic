@@ -2046,7 +2046,7 @@ func_int:
   &quot;(&quot;, checkToken
   eval_expression
   &quot;)&quot;, checkToken
-  get_number (long) (double)  put_number
+  get_number (_long) (double)  put_number
   0, end
 </codetext>
 </codeclip>
@@ -3241,11 +3241,7 @@ start_basic:
   NULL, prog, -&gt;Program.prev#= prog, -&gt;Program.next#=
   
   ERROR, xxxstatus#=
-  
   0xffffff, xcolor#=
-  screen_width#, xwidth#=
-  screen_height#, xheight#=
-  graphic_base#, bitmap#=
   
   0, prog, -&gt;Program.lineno#=
   text, prog, -&gt;Program.text#=
@@ -7861,7 +7857,7 @@ pass2_func_int:
   pass2_eval_expression
   &quot;)&quot;, pass2_checkToken
 
-  &quot; get_number (long) (double)  put_number&quot;, xxxprints xxxnl
+  &quot; get_number (_long) (double)  put_number&quot;, xxxprints xxxnl
 
   0, end
 </codetext>
